@@ -34,12 +34,11 @@ const Header = () => {
             <Route path='/services'>
               <Services />
             </Route>
-            <Route path='/'>
-              <Home />
-            </Route>
+            <Route path='/'>{/* <Home /> */}</Route>
             <Route path='/contact'>
               <Contact />
             </Route>
+            +
           </Switch>
         </div>
         <div className='cart'>

@@ -1,14 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 body {
   margin: 0;
+  color: #fff;
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn {
+  background: #6254e7;
+  color: #fff;
+  padding: 17px;
+  border-radius: 8px;
+  border: none;
 }
 
 /* Navbar CSS */
@@ -18,7 +38,7 @@ nav {
   align-items: center;
   /* width: 90vw; */
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
 }
 
 ul {
@@ -33,4 +53,16 @@ li {
 a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
+}
+
+/* Home page */
+.welcome-section {
+  width: 25vw;
+  margin-left: 150px;
+  margin-top: 4rem;
+}
+
+.welcome-section h1 {
+  width: 24vw;
+  font-size: 3rem;
 }
