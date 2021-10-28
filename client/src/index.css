@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 body {
   margin: 0;
-  color: #fff;
+  color: #3B3663;
   font-family: 'Rubik', sans-serif;
+  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #009fff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  /*background: #009fff; /* fallback for old browsers */
+ /* background: -webkit-linear-gradient(
     to right,
     #ec2f4b,
     #009fff
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+ /* background: linear-gradient(
     to right,
     #ec2f4b,
     #009fff
@@ -23,7 +28,8 @@ code {
     monospace;
 }
 
-.btn {
+.btn1 {
+  margin: 70px 0px;
   background: #6254e7;
   color: #fff;
   padding: 17px;
@@ -57,6 +63,8 @@ a:-webkit-any-link {
 
 /* Home page */
 .welcome-section {
+  
+  
   width: 25vw;
   margin-left: 150px;
   margin-top: 4rem;
@@ -65,4 +73,19 @@ a:-webkit-any-link {
 .welcome-section h1 {
   width: 24vw;
   font-size: 3rem;
+  
+}
+
+.service {
+  margin: 50px 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: row;
 }
