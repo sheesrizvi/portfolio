@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 body {
   margin: 0;
-  color: #3B3663;
+  color: #3b3663;
   font-family: 'Rubik', sans-serif;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
@@ -11,12 +11,12 @@ body {
   background-position: top right;
 
   /*background: #009fff; /* fallback for old browsers */
- /* background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     to right,
     #ec2f4b,
     #009fff
   ); /* Chrome 10-25, Safari 5.1-6 */
- /* background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #ec2f4b,
     #009fff
@@ -63,8 +63,6 @@ a:-webkit-any-link {
 
 /* Home page */
 .welcome-section {
-  
-  
   width: 25vw;
   margin-left: 150px;
   margin-top: 4rem;
@@ -73,7 +71,6 @@ a:-webkit-any-link {
 .welcome-section h1 {
   width: 24vw;
   font-size: 3rem;
-  
 }
 
 .service {
@@ -88,4 +85,48 @@ a:-webkit-any-link {
 .card {
   display: flex;
   flex-direction: row;
+}
+
+.service-section {
+  width: 85vw;
+  margin: 10rem auto;
+  /* margin-left: 150px;
+  margin-top: 4rem; */
+}
+
+.service-section h2 {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.service-wrapper {
+  margin-top: 4rem;
+}
+
+/* footer */
+
+.footer {
+  background: rgb(160, 46, 160);
+  height: 500px;
+}
+
+.footer-info {
+  width: 85vw;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-services {
+  width: 85vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-about {
+  width: 350px;
 }
