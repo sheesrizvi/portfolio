@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Services from '../pages/Services'
@@ -8,7 +8,7 @@ import Logo from '../img/Logo.png'
 
 const Header = () => {
   return (
-    <Router>
+   
       <nav>
         <div className='logo'>
           <img src={Logo} alt="Logo" style= {{width: "10vw"}} />
@@ -16,38 +16,39 @@ const Header = () => {
         <div className='links'>
           <ul>
             <li>
-              <Link to='/'>Home</Link>
+              <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <NavLink to='/about'>About</NavLink>
             </li>
             <li>
-              <Link to='/services'>Services</Link>
+              <NavLink to="/services">Services</NavLink>
             </li>
             <li>
-              <Link to='/contact'>Contacts</Link>
+              <NavLink to='/contact'>Contacts</NavLink>
             </li>
           </ul>
-          <Switch>
+          {/* <Switch>
             <Route path='/about'>
               <About />
             </Route>
-            <Route path='/services'>
+            <Route path="/services">
               <Services />
             </Route>
-            <Route path='/'>{/* <Home /> */}</Route>
+            <Route path='/'><Home /></Route>
             <Route path='/contact'>
               <Contact />
             </Route>
             +
-          </Switch>
+          </Switch> */}
+          
         </div>
         <div className='cart'>
           {' '}
-          <Link to='/cart'>🛒</Link>
+          <NavLink to='/cart'>🛒</NavLink>
         </div>
       </nav>
-    </Router>
+    
   )
 }
 

@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/Header";
 
 const Services = () => {
-  return <div></div>
-}
+  return (
+    <main>
+    
+      <h1 className="heading">Web Development</h1>
+    </main>
+  );
+};
 
-export default Services
+export default Services;
