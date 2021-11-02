@@ -109,24 +109,37 @@ a:-webkit-any-link {
 .footer {
   background: rgb(160, 46, 160);
   height: 500px;
+  color: #fff;
+  /* margin: 10rem auto; */
 }
 
 .footer-info {
-  width: 85vw;
-  margin: 10rem auto;
+  width: 75vw;
+  margin: 6rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 2rem;
 }
 
 .footer-services {
-  width: 85vw;
-  margin: 1rem auto;
+  width: 75vw;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .f-about {
   width: 350px;
+}
+
+.copyright {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.why-info {
+  width: 30vw;
+  /* margin-top: 4rem; */
 }

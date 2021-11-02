@@ -54,6 +54,21 @@ const Home = () => {
             description='MARKETING STRATEGY & SEO CAMPAIGNS'
           />
         </div>
+        <div className='why-us-section'>
+          <div className='why-info'>
+            <h3>WHY CHOOSE US</h3>
+            <h2>Benefits of Outsourcing</h2>
+            <p>
+              One Stop vendor for Design, Programming & Flash with extensive
+              skills in web programming & application development along with
+              expertise in Online Media Marketing, PR, Back office and Finance
+              related outsourcing. Our digital strategists have put together
+              successful Internet marketing campaigns for businesses ranging
+              from local coffee shops to publicly traded companies.
+            </p>
+            <button className='btn'>Discover More</button>
+          </div>
+        </div>
       </div>
       <Footer />
     </main>

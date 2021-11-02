@@ -9,7 +9,7 @@ const Footer = () => {
           <img src={Logo} alt='Logo' style={{ width: '10vw' }} />
         </div>
         <div className='footer-mail'>
-          <h3>info@globaloutsourcehub.com</h3>
+          <h3>📧info@globaloutsourcehub.com</h3>
         </div>
       </div>
       <div className='footer-services'>
@@ -38,6 +38,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <p className='copyright'>
+        © 2020 — Global Outsource Hub. All Rights Reserved.
+      </p>
     </div>
   )
 }
