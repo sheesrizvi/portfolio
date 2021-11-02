@@ -4,13 +4,14 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Services from '../pages/Services'
 import Contact from '../pages/Contact'
+import Logo from '../img/Logo.png'
 
 const Header = () => {
   return (
     <Router>
       <nav>
         <div className='logo'>
-          <h1>Startup</h1>
+          <img src={Logo} alt="Logo" style= {{width: "10vw"}} />
         </div>
         <div className='links'>
           <ul>

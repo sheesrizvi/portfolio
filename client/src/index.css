@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 body {
   margin: 0;
-  color: #fff;
+  color: #3b3663;
   font-family: 'Rubik', sans-serif;
+  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #009fff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  /*background: #009fff; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
     to right,
     #ec2f4b,
     #009fff
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #ec2f4b,
     #009fff
@@ -23,7 +28,8 @@ code {
     monospace;
 }
 
-.btn {
+.btn1 {
+  margin: 70px 0px;
   background: #6254e7;
   color: #fff;
   padding: 17px;
@@ -65,4 +71,75 @@ a:-webkit-any-link {
 .welcome-section h1 {
   width: 24vw;
   font-size: 3rem;
+}
+
+.service {
+  margin: 50px 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-section {
+  width: 85vw;
+  margin: 10rem auto;
+  /* margin-left: 150px;
+  margin-top: 4rem; */
+}
+
+.service-section h2 {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.service-wrapper {
+  margin-top: 4rem;
+}
+
+/* footer */
+
+.footer {
+  background: rgb(160, 46, 160);
+  height: 500px;
+  color: #fff;
+  /* margin: 10rem auto; */
+}
+
+.footer-info {
+  width: 75vw;
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer-services {
+  width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.f-about {
+  width: 350px;
+}
+
+.copyright {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.why-info {
+  width: 30vw;
+  /* margin-top: 4rem; */
 }
