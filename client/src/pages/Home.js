@@ -66,7 +66,36 @@ const Home = () => {
               successful Internet marketing campaigns for businesses ranging
               from local coffee shops to publicly traded companies.
             </p>
-            <button className='btn'>Discover More</button>
+            <button className='btn1'>Discover More</button>
+          </div>
+          <div className='number-section'>
+            <div className='contribution-section'>
+              <div className='cs-i'>
+                <h1>25+ </h1>
+                <p>Business partners</p>
+              </div>
+              <div className='cs-p'>
+                We are experts with an extreme focus on Quality of Work we do!
+              </div>
+            </div>
+            <div className='contribution-section'>
+              <div className='cs-i'>
+                <h1>25+ </h1>
+                <p>Business partners</p>
+              </div>
+              <div className='cs-p'>
+                We are experts with an extreme focus on Quality of Work we do!
+              </div>
+            </div>
+            <div className='contribution-section'>
+              <div className='cs-i'>
+                <h1>25+ </h1>
+                <p>Business partners</p>
+              </div>
+              <div className='cs-p'>
+                We are experts with an extreme focus on Quality of Work we do!
+              </div>
+            </div>
           </div>
         </div>
       </div>

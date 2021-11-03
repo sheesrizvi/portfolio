@@ -141,5 +141,28 @@ a:-webkit-any-link {
 
 .why-info {
   width: 30vw;
-  /* margin-top: 4rem; */
+  margin-top: 5rem;
+}
+
+.why-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  width: 80vw;
+}
+
+.contribution-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-i h1 {
+  font-size: 4rem;
+}
+
+.cs-p {
+  width: 20vw;
+  margin-left: 6rem;
 }
