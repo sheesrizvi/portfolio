@@ -36,7 +36,7 @@ const Home = () => {
       </div>
 
       <div className='service-section'>
-        <h2>Provide Awesome Service With Our Tools</h2>
+        <h2 className='service-head'>Provide Awesome Service With Our Tools</h2>
         <div className='wrapper service-wrapper'>
           <Card1
             title='Database Management System'
@@ -96,6 +96,47 @@ const Home = () => {
                 We are experts with an extreme focus on Quality of Work we do!
               </div>
             </div>
+          </div>
+        </div>
+        <div className='exp-section'>
+          <div className='get-in-touch'>
+            <p>📱</p>
+            <h1>Expand Your Digital Presence</h1>
+            <p>Global Outsourse Hub gives you the best solution for business</p>
+            <button className='btn1'>GET IN TOUCH➡</button>
+          </div>
+          <div className='tech-depth'>
+            <h3>EXPERIENCE</h3>
+            <h2>Technical Depth Know-How</h2>
+            <p>
+              Global Outsource Hub stays ahead of the curve with digital
+              marketing trends. Our success has us leading the pack amongst our
+              competitors with our ability to anticipate change and innovation.
+            </p>
+            <button className='btn1'>Discover More</button>
+          </div>
+        </div>
+        <div className='outsourcing-section'>
+          <div className='tech-depth'>
+            <h3>OUTSOURCING</h3>
+            <h2>Leading Business Expert</h2>
+            <p>
+              Outsourcing as an idea is not novice; it has been for over a
+              thousand years now, the only difference being that it’s gaining
+              lot more popularity since a decade for whatever reasons.
+              Outsourcing basically means asking a third-party vendor to work
+              for you on a contractual basis.
+            </p>
+            <button className='btn1'>Discover More</button>
+          </div>
+          <div className='get-in-touch'>
+            <p>💡</p>
+            <h1>Have a project in mind? Let’s get to work.</h1>
+            <p>
+              Have a project in mind? Let’s get to work. Find out how it works
+              and ask any questions you may have.
+            </p>
+            <button className='btn1'>GET IN TOUCH➡</button>
           </div>
         </div>
       </div>

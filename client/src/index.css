@@ -9,18 +9,6 @@ body {
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-position: top right;
-
-  /*background: #009fff; /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(
-    to right,
-    #ec2f4b,
-    #009fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(
-    to right,
-    #ec2f4b,
-    #009fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
@@ -94,7 +82,7 @@ a:-webkit-any-link {
   margin-top: 4rem; */
 }
 
-.service-section h2 {
+.service-head {
   text-align: center;
   width: 400px;
   margin: 0 auto;
@@ -109,8 +97,8 @@ a:-webkit-any-link {
 .footer {
   background: rgb(160, 46, 160);
   height: 500px;
+  width: 100%;
   color: #fff;
-  /* margin: 10rem auto; */
 }
 
 .footer-info {
@@ -139,17 +127,22 @@ a:-webkit-any-link {
   text-align: center;
 }
 
-.why-info {
-  width: 30vw;
-  margin-top: 5rem;
-}
-
 .why-us-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
   width: 80vw;
+}
+
+.why-us-section h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.why-info {
+  width: 500px;
+  margin-top: 5rem;
 }
 
 .contribution-section {
@@ -165,4 +158,53 @@ a:-webkit-any-link {
 .cs-p {
   width: 20vw;
   margin-left: 6rem;
+}
+
+/* @media screen and (max-width: '800px') {
+  .why-us-section {
+    width: 10vw;
+  }
+} */
+
+/* homepage-exp-section  */
+
+.exp-section {
+  background-image: url(./img/figure-image1-1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  /* background-size: 50%; */
+  height: 100vh;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 85vw;
+}
+
+.get-in-touch {
+  width: 300px;
+  margin: 2rem auto;
+}
+
+.tech-depth {
+  width: 30vw;
+  color: #3b3663;
+  margin-left: 10rem;
+}
+
+/* Homepage-outsourcing section  */
+
+.outsourcing-section {
+  background-image: url(./img/figure_image2-1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  /* background-size: 50%; */
+  height: 100vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 85vw;
 }
