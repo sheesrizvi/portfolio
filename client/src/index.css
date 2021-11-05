@@ -11,6 +11,9 @@ body {
   background-position: top right;
 }
 
+/* .main {
+} */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -184,13 +187,16 @@ a:-webkit-any-link {
 
 .get-in-touch {
   width: 300px;
-  margin: 2rem auto;
+  margin-left: 6rem;
+  margin-top: 6rem;
+  margin-right: 10rem;
 }
 
 .tech-depth {
   width: 30vw;
   color: #3b3663;
-  margin-left: 10rem;
+  margin-top: 6rem;
+  margin-left: 6rem;
 }
 
 /* Homepage-outsourcing section  */
