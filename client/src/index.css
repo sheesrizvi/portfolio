@@ -55,7 +55,7 @@ a:-webkit-any-link {
 /* Home page */
 .welcome-section {
   width: 25vw;
-  margin-left: 150px;
+  margin-left: 6rem;
   margin-top: 4rem;
 }
 
@@ -135,7 +135,7 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
-  width: 80vw;
+  width: 85vw;
 }
 
 .why-us-section h2 {
@@ -146,6 +146,7 @@ a:-webkit-any-link {
 .why-info {
   width: 500px;
   margin-top: 5rem;
+  margin-left: 6rem;
 }
 
 .contribution-section {
@@ -213,4 +214,76 @@ a:-webkit-any-link {
   justify-content: space-between;
   color: #fff;
   width: 85vw;
+}
+
+/* About us Page  */
+
+.about-us-section {
+  width: 75vw;
+  margin: 0 auto;
+  background-image: url(./img/about_us_img_02-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.abt-ph {
+  width: 350px;
+}
+
+.abt-p {
+  width: 500px;
+}
+
+/* what we do section  */
+
+.WVD-header {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.WVD-section {
+  width: 75vw;
+  margin: 0 auto;
+  background-image: url(./img/about_us_img_01-1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.WVD-info {
+  position: relative;
+  left: 50rem;
+}
+
+.WVD-info p {
+  width: 300px;
+}
+
+.cards-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.card {
+  padding: 0 43 px 57 px 43 px;
+  background-color: #f9f8ff;
+  border-radius: 10 px 10 px 10 px 10 px;
+  height: 200px;
+  width: 400px;
+  display: block;
 }

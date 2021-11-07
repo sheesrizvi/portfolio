@@ -2,6 +2,7 @@ import React from 'react'
 import Typewriter from 'typewriter-effect'
 import Card1 from '../components/Card'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import dbms from '../img/dbms.png'
 import product from '../img/product.png'
 import seo from '../img/seo.png'
@@ -9,6 +10,7 @@ import seo from '../img/seo.png'
 const Home = () => {
   return (
     <main>
+      <Header />
       <div className='welcome-section'>
         <h2>WELCOME</h2>
         <h1>
