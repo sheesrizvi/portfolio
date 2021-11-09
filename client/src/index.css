@@ -6,9 +6,9 @@ body {
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: top right;
+ 
+ 
+  
 
   /*background: #009fff; /* fallback for old browsers */
  /* background: -webkit-linear-gradient(
@@ -82,14 +82,138 @@ a:-webkit-any-link {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.card {
+.card1 {
   display: flex;
   flex-direction: row;
 }
 .heading {
   justify-content: center;
   align-items: center;
+}
+
+.home-page {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+
+.service-page {
+  background-image: url(./img/service-bg.jpg);
+ background-repeat: no-repeat;
+ /* background-position: top right; */
+}
+
+.s-heading {
+  text-align: center;
+  padding-top: 10rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.s-heading h1 {
+  padding-bottom: 5rem;
+}
+
+.service-section1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  padding: 2px;
+  margin-left: 3.5rem;
+
+ 
+}
+
+.service-section1 img {
+  margin-left: 10rem;
+}
+
+.service-section1 p {
+  width: 35vw;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.service-section1 h2 {
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 10px 0px;
+  
+}
+
+.section1-right {
+  margin-left: 5rem;
+}
+
+.price {
+  background: chartreuse;
+  height: 15rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.price-card {
+  margin: 2rem;
+}
+
+.service-section3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  padding: 2px;
+  margin-left: 3.5rem;
+
+ 
+}
+
+.service-section3 p {
+  width: 35vw;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.service-section3 h2 {
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0px 0px;
+  
+}
+
+.service-section3 img {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  height: auto;
+  width: 715px;
+  max-width: 100%;
+}
+
+.section3-right {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.analysis-form {
+  margin-right: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(12rem, 20rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.analysis-form input {
+  border: none;
+  border-bottom: 1px solid #c0baf6;
 }

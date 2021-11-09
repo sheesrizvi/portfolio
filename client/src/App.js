@@ -8,7 +8,7 @@ import Services from "./pages/Services";
 const App = () => {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
         <Route path="/" component={Home} exact />
         <Route path="/services" component={Services} />
     </Router>
