@@ -18,7 +18,7 @@ import { Button, Card } from "react-bootstrap";
 const Card1 = (props) => {
   return (
   <>
-  <div className="card" >
+  <div className="card1">
   <img src={props.img} className="card-img-top" alt="..." />
   <div className="card-body">
     <h5 className="card-title">{props.title}</h5>
