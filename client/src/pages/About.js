@@ -75,6 +75,27 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div className='WCU-section'>
+        <div className='WVD-info'>
+          <h3>First Working Process</h3>
+          <p>
+            For startups and growing businesses, an online specialist can
+            develop a digital marketing plan to help you grow.
+          </p>
+        </div>
+
+        <div className='WVD-info'>
+          <h3>Dedicated Team Member</h3>
+          <p>
+            Your digital consultant will also be able to kickstart campaigns and
+            maximise your marketing budget.
+          </p>
+        </div>
+        <div className='WVD-info'>
+          <h3>24/7 Hours Support</h3>
+          <p>Our expert team will be happy to help you any time, any day</p>
+        </div>
+      </div>
       <Footer />
     </div>
   )

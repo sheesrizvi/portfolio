@@ -259,11 +259,12 @@ header {
   background-position: left;
   margin-top: 2rem;
   align-items: center;
+  /* background: #000; */
 }
 
 .WVD-info {
-  position: relative;
-  left: 50rem;
+  /* position: relative; */
+  margin-left: 50rem;
 }
 
 .WVD-info p {
@@ -286,4 +287,15 @@ header {
   height: 200px;
   width: 400px;
   display: block;
+}
+
+.WCU-section {
+  width: 75vw;
+  margin: 0 auto;
+  background-image: url(./img/home_img-03-1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: 10rem;
+  /* padding-top: 15rem; */
+  align-items: center;
 }
