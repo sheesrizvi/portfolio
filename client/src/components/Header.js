@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +12,17 @@ import Contact from '../pages/Contact'
 import Logo from '../img/Logo.png'
 
 const Header = () => {
+  // const Navbar = () => {
+  //   const [colorChange, setColorchange] = useState(false)
+  //   const changeNavbarColor = () => {
+  //     if (window.scrollY >= 80) {
+  //       setColorchange(true)
+  //     } else {
+  //       setColorchange(false)
+  //     }
+  //   }
+  // }
+  // window.addEventListener('scroll', changeNavbarColor)
   return (
     <nav>
       <div className='logo'>

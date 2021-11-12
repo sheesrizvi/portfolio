@@ -1,5 +1,11 @@
 import React from 'react'
 import Logo from '../img/Logo.png'
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -19,7 +25,20 @@ const Footer = () => {
             Global Outsource have much planned for the future, working with
             great clients and continued software development.
           </p>
-          <div className='social-media'>icons</div>
+          <div className='social-media'>
+            <div className='r-icons'>
+              <FaFacebook />
+            </div>
+            <div className='r-icons'>
+              <FaInstagram />
+            </div>
+            <div className='r-icons'>
+              <FaLinkedinIn />
+            </div>
+            <div className='r-icons'>
+              <FaTwitter />
+            </div>
+          </div>
         </div>
         <div className='f-services'>
           <h3>Services</h3>

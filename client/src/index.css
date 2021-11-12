@@ -6,9 +6,9 @@ body {
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./img/background.jpg);
+  /* background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right; */
 }
 
 /* .main {
@@ -29,7 +29,7 @@ code {
 }
 
 /* Navbar CSS */
-nav {
+Nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,13 +55,15 @@ a:-webkit-any-link {
 /* Home page */
 .welcome-section {
   width: 25vw;
-  margin-left: 6rem;
-  margin-top: 4rem;
+  margin-left: 13rem;
+  margin-top: 6rem;
+  letter-spacing: 1px;
 }
 
 .welcome-section h1 {
   width: 24vw;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .service {
@@ -155,13 +157,16 @@ a:-webkit-any-link {
 .service-section3 {
   display: flex;
   flex-direction: row;
+  margin-top: 20rem;
+  padding: 2px;
+  margin-left: 3.5rem;
 }
 
 .service-section {
   width: 85vw;
   margin: 10rem auto;
-  /* margin-left: 150px;
-  margin-top: 4rem; */
+  margin-left: 150px;
+  margin-top: 4rem;
 }
 
 .service-head {
@@ -177,7 +182,8 @@ a:-webkit-any-link {
 /* footer */
 
 .footer {
-  background: rgb(160, 46, 160);
+  background-image: url(./img/service-bg.jpg);
+  background-repeat: no-repeat;
   height: 500px;
   width: 100%;
   color: #fff;
@@ -198,6 +204,15 @@ a:-webkit-any-link {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+}
+
+.social-media {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.r-icons {
+  margin: 0 0.6rem;
 }
 
 .f-about {
@@ -309,6 +324,8 @@ a:-webkit-any-link {
 }
 
 header {
+  /* background-image: url(./img/service-bg.jpg);
+  background-repeat: no-repeat; */
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -378,11 +395,13 @@ header {
   /* padding-top: 15rem; */
   align-items: center;
 }
-/* margin-top: 5rem;
+
+/* .service-section3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
   padding: 2px;
   margin-left: 3.5rem;
-
- 
 } */
 
 .service-section3 p {
