@@ -3,9 +3,12 @@ import Typewriter from 'typewriter-effect'
 import Card1 from '../components/Card'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import prLogo from '../img/pr.png'
 import dbms from '../img/dbms.png'
 import product from '../img/product.png'
 import seo from '../img/seo.png'
+import pfLogo1 from '../img/service/portfolio_img_01-1-670x485.jpg'
+import pfLogo2 from '../img/service/portfolio_img_02-1-670x485.jpg'
 
 const Home = () => {
   return (
@@ -42,7 +45,30 @@ const Home = () => {
           <h2 className='service-head'>
             Provide Awesome Service With Our Tools
           </h2>
-          <div className='wrapper service-wrapper'>
+          <div className='homeSection1'>
+            <div className='c1'>
+              <h3>Online Public Relations</h3>
+              <img src={prLogo} alt='' />
+              <p>DISCOVER, EXPLORE & UNDERSTANDING THE PRODUCT</p>
+            </div>
+            <div className='c1'>
+              <h3>Database Management</h3>
+              <img src={dbms} alt='' />
+              <p>DATABASE MANAGEMENT</p>
+            </div>
+            <div className='c1'>
+              <h3>Product UX, Design & Development</h3>
+              <img src={product} alt='' />
+              <p>DIGITAL PRODUCT UX, DESIGN & DEVELOPMENT</p>
+            </div>
+            <div className='c1'>
+              <h3>Marketing Strategy & SEO Campaigns</h3>
+              <img src={seo} alt='' />
+              <p>MARKETING STRATEGY & SEO CAMPAIGNS</p>
+            </div>
+          </div>
+
+          {/* <div className='wrapper service-wrapper'>
             <Card1
               title='Database Management System'
               img={dbms}
@@ -58,7 +84,8 @@ const Home = () => {
               img={seo}
               description='MARKETING STRATEGY & SEO CAMPAIGNS'
             />
-          </div>
+          </div> */}
+
           <div className='why-us-section'>
             <div className='why-info'>
               <h3>WHY CHOOSE US</h3>
@@ -145,6 +172,23 @@ const Home = () => {
                 and ask any questions you may have.
               </p>
               <button className='btn1'>GET IN TOUCH➡</button>
+            </div>
+          </div>
+          <div className='homeSection-5'>
+            <div className='service-head'>
+              <p>FEATURED PROJECTS</p>
+              <h2>Our Case Studies</h2>
+            </div>
+            <div className='case-carousel'>
+              <div className='c2'>
+                <img src={pfLogo1} alt='' />
+              </div>
+              <div className='c2'>
+                <img src={pfLogo2} alt='' />
+              </div>
+              <div className='c2'>
+                <img src={pfLogo1} alt='' />
+              </div>
             </div>
           </div>
         </div>

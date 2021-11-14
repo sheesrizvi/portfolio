@@ -11,9 +11,6 @@ body {
   background-position: top right; */
 }
 
-/* .main {
-} */
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -55,7 +52,7 @@ a:-webkit-any-link {
 /* Home page */
 .welcome-section {
   width: 25vw;
-  margin-left: 13rem;
+  margin-left: 11rem;
   margin-top: 6rem;
   letter-spacing: 1px;
 }
@@ -70,15 +67,57 @@ a:-webkit-any-link {
   margin: 50px 0px;
 }
 
+.homeSection1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  /* background: #000; */
+}
+
+.c1 {
+  height: 280px;
+  width: 280px;
+  background: rgb(243, 239, 239);
+  padding: 30px 30px;
+  border-radius: 20px;
+  margin: 0 1.5rem;
+}
+
+.c1:hover {
+  background: purple;
+  color: #fff;
+  /* height: 280px;
+  width: 330px; */
+}
+
+.c1 h3 {
+  font-weight: 900;
+}
+
+.c1 p {
+  margin-top: 5px;
+  /* padding-bottom: 10rem; */
+}
+
+.c1 img {
+  height: 70px;
+  width: 70px;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card1 {
-  display: flex;
-  flex-direction: row;
+
+.abt-img {
+  height: 100px;
+  /* width: 200px; */
 }
+
 .heading {
   justify-content: center;
   align-items: center;
@@ -163,16 +202,18 @@ a:-webkit-any-link {
 }
 
 .service-section {
-  width: 85vw;
+  width: 90vw;
   margin: 10rem auto;
-  margin-left: 150px;
-  margin-top: 4rem;
+  /* margin-left: 150px; */
+  /* margin-top: 4rem; */
+  /* background: #000; */
 }
 
 .service-head {
   text-align: center;
   width: 400px;
   margin: 0 auto;
+  font-weight: 900;
 }
 
 .service-wrapper {
@@ -225,11 +266,16 @@ a:-webkit-any-link {
 }
 
 .why-us-section {
+  width: 85vw;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 3rem;
-  width: 85vw;
+  /* justify-content: space-between; */
+  margin-top: 5rem;
+}
+
+.number-section {
+  margin-left: 8rem;
 }
 
 .why-us-section h2 {
@@ -240,7 +286,7 @@ a:-webkit-any-link {
 .why-info {
   width: 500px;
   margin-top: 5rem;
-  margin-left: 6rem;
+  margin-left: 3rem;
 }
 
 .contribution-section {
@@ -315,21 +361,27 @@ a:-webkit-any-link {
 .about-us-section {
   width: 75vw;
   margin: 0 auto;
-  background-image: url(./img/about_us_img_02-1.jpg);
+  /* background-image: url(./img/about_us_img_02-1.jpg);
   background-repeat: no-repeat;
-  background-position: top right;
-  margin-top: 10rem;
+  background-position: top right; */
+  margin-top: 15rem;
   display: flex;
   align-items: center;
 }
 
+.about-us-section h2 {
+  font-weight: 900;
+}
+
 header {
-  /* background-image: url(./img/service-bg.jpg);
-  background-repeat: no-repeat; */
+  background-image: url(./img/service-bg.jpg);
+  background-repeat: no-repeat;
   text-align: center;
   color: #fff;
   font-weight: bold;
   margin-top: 5rem;
+  height: 300px;
+  padding-top: 1rem;
 }
 
 .abt-ph {
@@ -350,17 +402,23 @@ header {
 .WVD-section {
   width: 75vw;
   margin: 0 auto;
-  background-image: url(./img/about_us_img_01-1.png);
+  /* background-image: url(./img/about_us_img_01-1.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left; */
   margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-between; */
   align-items: center;
   /* background: #000; */
 }
 
+.WVD-section img {
+  width: 600px;
+}
+
 .WVD-info {
   /* position: relative; */
-  margin-left: 50rem;
+  margin-left: 4rem;
 }
 
 .WVD-info p {
@@ -374,6 +432,14 @@ header {
   width: 75vw;
   margin: 2rem auto;
   text-align: center;
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
+}
+
+.cards-section h4 {
+  margin-top: 15px;
+  font-weight: 900;
 }
 
 .card {
@@ -383,17 +449,46 @@ header {
   height: 200px;
   width: 400px;
   display: block;
+  margin: 0 20px;
+}
+
+.card1 {
+  background-color: #f9f8ff;
+  border-radius: 20px;
+}
+
+.card2 {
+  background-color: #fffcf6;
+  border-radius: 20px;
+}
+
+.card3 {
+  background-color: #f0fffc;
+  border-radius: 20px;
 }
 
 .WCU-section {
   width: 75vw;
   margin: 0 auto;
-  background-image: url(./img/home_img-03-1.png);
-  background-repeat: no-repeat;
-  background-position: left;
   margin-top: 10rem;
-  /* padding-top: 15rem; */
+  display: flex;
   align-items: center;
+}
+
+.WCU-info {
+  margin-left: 11rem;
+}
+
+.WCU-infoi {
+  width: 400px;
+}
+
+.WCU-header {
+  width: 300px;
+}
+
+.WCU-header h2 {
+  font-weight: 900;
 }
 
 /* .service-section3 {
@@ -441,4 +536,24 @@ header {
 .analysis-form input {
   border: none;
   border-bottom: 1px solid #c0baf6;
+}
+
+/* caraousel  */
+
+.case-carousel {
+  width: 85vw;
+  margin: 0 auto;
+  /* background: #000; */
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.c2 {
+  margin: 0 2.3rem;
+}
+
+.case-carousel img {
+  height: 260px;
+  width: 360px;
 }
