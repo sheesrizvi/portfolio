@@ -5,8 +5,7 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import About from './pages/About'
 import Header from './components/Header'
-// import Home from "./pages/Home";
-// import Services from "./pages/Services";
+
 
 const App = () => {
   return (
@@ -16,12 +15,7 @@ const App = () => {
       <Route path='/services' component={Services} />
     </Router>
   )
-  // }
-  //       {/* <Header /> */}
-  //         <Route path="/" component={Home} exact />
-  //         <Route path="/services" component={Services} />
-  //     </Router>
-  //   );
+  
 }
 
 export default App
