@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <p className='copyright'>
-        © 2020 — Global Outsource Hub. All Rights Reserved.
+        © 2022 — Global Outsource Hub. All Rights Reserved.
       </p>
     </div>
   )

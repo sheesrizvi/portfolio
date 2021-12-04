@@ -112,7 +112,7 @@ const Services = () => {
       </div>
       <div className='service-section3'>
         <div>
-          <img src={services_img3} />
+          <img className='ss3-img' src={services_img3} />
         </div>
         <div className='section3-right'>
           <p>Analysis</p>

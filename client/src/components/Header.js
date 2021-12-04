@@ -37,7 +37,18 @@ const Header = () => {
             <NavLink to='/about'>About</NavLink>
           </li>
           <li>
-            <NavLink to='/services'>Services</NavLink>
+            <div class='dropdown'>
+              <button className='dropbtn'>
+                Services
+                {/* <NavLink to='/services'>Services</NavLink> */}
+              </button>
+              <div className='dropdown-content'>
+                <a href='/web-development'>Web Development</a>
+                <a href='/mobile-app-development'>Mobile APP Development</a>
+                <a href='/seo-services'>SEO Services</a>
+                <a href='/digital-marketing'>Digital Marketing</a>
+              </div>
+            </div>
           </li>
           <li>
             <NavLink to='/contact'>Contacts</NavLink>
