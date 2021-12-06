@@ -8,6 +8,7 @@ import Header from './components/Header'
 import AppDev from './pages/AppDev'
 import SeoServices from './pages/SeoServices'
 import DigitalMarketing from './pages/DigitalMarketing'
+import ContactUs from './pages/ContactUs'
 // import Home from "./pages/Home";
 // import Services from "./pages/Services";
 
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/mobile-app-development' component={AppDev} />
       <Route path='/seo-services' component={SeoServices} />
       <Route path='/digital-marketing' component={DigitalMarketing} />
+      <Route path='/contact-us' component={ContactUs} />
     </Router>
   )
   // }

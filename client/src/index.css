@@ -18,11 +18,17 @@ code {
 
 .btn1 {
   margin: 70px 0px;
+  background: #fff;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 0.2px solid #6254e7;
+  font-weight: 800;
+}
+
+.btn1:hover {
   background: #6254e7;
   color: #fff;
-  padding: 17px;
-  border-radius: 8px;
-  border: none;
 }
 
 .btn2 {
@@ -78,7 +84,8 @@ a:-webkit-any-link {
 .welcome-section h1 {
   width: 24vw;
   font-size: 3rem;
-  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
 }
 
 .service {
@@ -216,6 +223,7 @@ a:-webkit-any-link {
   margin-top: 20rem;
   padding: 2px;
   margin-left: 3.5rem;
+  align-items: center;
 }
 
 .service-section {
@@ -295,9 +303,16 @@ a:-webkit-any-link {
   margin-left: 8rem;
 }
 
+.line {
+  border-left: 1px solid grey;
+  height: 100px;
+  margin: 0 2rem;
+}
+
 .why-us-section h2 {
   text-align: left;
   margin-bottom: 2rem;
+  font-weight: 900;
 }
 
 .why-info {
@@ -307,6 +322,7 @@ a:-webkit-any-link {
 }
 
 .contribution-section {
+  margin: 0.5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -318,7 +334,7 @@ a:-webkit-any-link {
 
 .cs-p {
   width: 20vw;
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
 }
 
 /* @media screen and (max-width: '800px') {
@@ -856,4 +872,84 @@ header {
 .mail-img {
   /* width: 100px; */
   height: 50px;
+}
+
+/* contact us page  */
+
+.contact-us-s1-heading {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.contact-us-s1-heading h3 {
+  width: 25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.contact-us-s1-heading p {
+  width: 40rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #696687;
+}
+
+.contact-us-s1-img {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-us-query {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.contact-us-query-right h3 {
+  font-weight: 900;
+}
+
+.contact-us-query-left h3 {
+  font-weight: 900;
+}
+
+.contact-us-s3-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.contact-us-s3 h2 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.f1 img {
+  height: 140px;
+}
+
+.map-section {
+  padding-bottom: 25rem;
+}
+
+.news-letter {
+  margin-left: 15rem;
+  margin-top: 8rem;
+}
+
+.news-letter h2 {
+  font-weight: 900;
+}
+
+.news-letter img {
+  height: 50px;
+  position: relative;
+  right: 4rem;
+  top: 4rem;
 }

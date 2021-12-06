@@ -5,10 +5,7 @@ import {
   Route,
   NavLink,
 } from 'react-router-dom'
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Services from '../pages/Services'
-import Contact from '../pages/Contact'
+
 import Logo from '../img/Logo.png'
 
 const Header = () => {
@@ -51,7 +48,7 @@ const Header = () => {
             </div>
           </li>
           <li>
-            <NavLink to='/contact'>Contacts</NavLink>
+            <NavLink to='/contact-us'>Contacts</NavLink>
           </li>
         </ul>
         {/* <Switch>

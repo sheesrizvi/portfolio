@@ -106,26 +106,30 @@ const Home = () => {
                   <h1>25+ </h1>
                   <p>Business partners</p>
                 </div>
+                <div className='line' />
                 <div className='cs-p'>
                   We are experts with an extreme focus on Quality of Work we do!
                 </div>
               </div>
               <div className='contribution-section'>
                 <div className='cs-i'>
-                  <h1>25+ </h1>
+                  <h1>250+ </h1>
                   <p>Business partners</p>
                 </div>
+                <div className='line' />
                 <div className='cs-p'>
                   We are experts with an extreme focus on Quality of Work we do!
                 </div>
               </div>
               <div className='contribution-section'>
                 <div className='cs-i'>
-                  <h1>25+ </h1>
+                  <h1>100+ </h1>
                   <p>Business partners</p>
                 </div>
+                <div className='line' />
                 <div className='cs-p'>
-                  We are experts with an extreme focus on Quality of Work we do!
+                  One Stop vendor for Design, Programming & Flash with extensive
+                  skills in web programming & application development.
                 </div>
               </div>
             </div>
