@@ -48,6 +48,10 @@ Nav {
   /* width: 90vw; */
   margin: 0 auto;
   padding: 1rem 5rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.8;
 }
 
 ul {
@@ -241,6 +245,10 @@ a:-webkit-any-link {
   font-weight: 900;
 }
 
+.service-head h2 {
+  font-weight: 900;
+}
+
 .service-wrapper {
   margin-top: 4rem;
 }
@@ -371,6 +379,10 @@ a:-webkit-any-link {
   color: #3b3663;
   margin-top: 6rem;
   margin-left: 6rem;
+}
+
+.tech-depth h2 {
+  font-weight: 900;
 }
 
 /* Homepage-outsourcing section  */
@@ -584,6 +596,11 @@ header {
   margin: 0 2.3rem;
 }
 
+.c2 img {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
 .case-carousel img {
   height: 260px;
   width: 360px;
@@ -709,7 +726,7 @@ header {
   font-weight: 700;
   border: none;
   outline: none;
-  /* color: white; */
+  color: #3b3663;
   /* padding: 14px 16px; */
   background-color: inherit;
   font-family: inherit;
@@ -952,4 +969,16 @@ header {
   position: relative;
   right: 4rem;
   top: 4rem;
+}
+
+.c2-info {
+  color: #fff;
+  position: relative;
+  bottom: 12rem;
+  /* width: 20rem; */
+  text-align: center;
+}
+
+.c2-info h5 {
+  font-weight: 900;
 }

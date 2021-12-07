@@ -3,13 +3,14 @@ import Typewriter from 'typewriter-effect'
 import Card1 from '../components/Card'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import { Carousel } from '@trendyol-js/react-carousel'
 import prLogo from '../img/pr.png'
 import dbms from '../img/dbms.png'
 import product from '../img/product.png'
 import seo from '../img/seo.png'
 import pfLogo1 from '../img/service/portfolio_img_01-1-670x485.jpg'
 import pfLogo2 from '../img/service/portfolio_img_02-1-670x485.jpg'
-
+import pfLogo3 from '../img/service/portfolio_img_05-1-670x485.jpg'
 const Home = () => {
   return (
     <main>
@@ -184,15 +185,35 @@ const Home = () => {
               <h2>Our Case Studies</h2>
             </div>
             <div className='case-carousel'>
+              {/* <Carousel> */}
               <div className='c2'>
                 <img src={pfLogo1} alt='' />
+                <div className='c2-info'>
+                  {' '}
+                  <h5>Online Media Management</h5>
+                  <p>Marketing</p>
+                  <p>Read More</p>
+                </div>
               </div>
               <div className='c2'>
                 <img src={pfLogo2} alt='' />
+                <div className='c2-info'>
+                  {' '}
+                  <h5>Mannix Marketing</h5>
+                  <p>SEO</p>
+                  <p>Read More</p>
+                </div>
               </div>
               <div className='c2'>
-                <img src={pfLogo1} alt='' />
+                <img src={pfLogo3} alt='' />
+                <div className='c2-info'>
+                  {' '}
+                  <h5>Online Media Management</h5>
+                  <p>Marketing</p>
+                  <p>Read More</p>
+                </div>
               </div>
+              {/* </Carousel> */}
             </div>
           </div>
         </div>

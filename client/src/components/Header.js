@@ -35,10 +35,7 @@ const Header = () => {
           </li>
           <li>
             <div class='dropdown'>
-              <button className='dropbtn'>
-                Services
-                {/* <NavLink to='/services'>Services</NavLink> */}
-              </button>
+              <button className='dropbtn'>Services</button>
               <div className='dropdown-content'>
                 <a href='/web-development'>Web Development</a>
                 <a href='/mobile-app-development'>Mobile APP Development</a>
