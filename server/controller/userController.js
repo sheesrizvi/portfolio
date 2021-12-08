@@ -1,8 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const User = require('../models/user')
-import generateToken from "../utils/generateToken.js";
-
-
+const generateToken = require("../utils/generateToken.js");
 
 
 const authUser = asyncHandler(async (req, res) => {
@@ -34,7 +32,7 @@ const registerUser = asyncHandler (async (req, res) => {
         throw new Error("User already exists!!")
     }
 
-    const user = await user.Create({
+    const user = await User.create({
         name,
         email,
         password
