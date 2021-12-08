@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import About from './pages/About'
+import Login from './pages/Login'
+import Register from './pages/Register'
 import Header from './components/Header'
 import AppDev from './pages/AppDev'
 import SeoServices from './pages/SeoServices'
@@ -11,6 +13,7 @@ import DigitalMarketing from './pages/DigitalMarketing'
 import ContactUs from './pages/ContactUs'
 // import Home from "./pages/Home";
 // import Services from "./pages/Services";
+
 
 const App = () => {
   return (
@@ -22,14 +25,12 @@ const App = () => {
       <Route path='/seo-services' component={SeoServices} />
       <Route path='/digital-marketing' component={DigitalMarketing} />
       <Route path='/contact-us' component={ContactUs} />
+      {/* <Route path='/services' component={Services} /> */}
+      <Route path='/login' component={Login} />
+      <Route path='/register' component={Register} />
     </Router>
   )
-  // }
-  //       {/* <Header /> */}
-  //         <Route path="/" component={Home} exact />
-  //         <Route path="/services" component={Services} />
-  //     </Router>
-  //   );
+  
 }
 
 export default App
