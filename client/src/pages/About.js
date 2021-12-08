@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import { CircularProgressbar } from 'react-circular-progressbar'
+import 'react-circular-progressbar/dist/styles.css'
 import abtLogo from '../img/about_us_img_02-1.jpg'
 import wvdLogo from '../img/about_us_img_01-1.png'
 import wcuLogo from '../img/home_img-03-1.png'
@@ -59,6 +61,15 @@ const About = () => {
         <img src={wvdLogo} alt='' />
         <div className='WVD-info'>
           <div className='WVD-info'>
+            <div style={{ width: 100, height: 100 }}>
+              <CircularProgressbar
+                value={76}
+                // minValue={0}
+                // maxValue={0}
+                text={`${76}%`}
+              />
+            </div>
+            {/* <CircularProgressbar value={percentage} text={`${percentage}%`} />; */}
             <h3>Creative Approach</h3>
             <p>
               Global Outsource Hub’ has all the skills & expertise required to
@@ -66,6 +77,14 @@ const About = () => {
             </p>
           </div>
           <div className='WVD-info'>
+            <div style={{ width: 100, height: 100 }}>
+              <CircularProgressbar
+                value={89}
+                // minValue={0}
+                // maxValue={0}
+                text={`${89}%`}
+              />
+            </div>
             <h3>Guaranteed Success</h3>
             <p>
               We shall thrive to match smaller players with their bigger
@@ -73,6 +92,14 @@ const About = () => {
             </p>
           </div>
           <div className='WVD-info'>
+            <div style={{ width: 100, height: 100 }}>
+              <CircularProgressbar
+                value={75}
+                // minValue={0}
+                // maxValue={0}
+                text={`${75}%`}
+              />
+            </div>
             <h3>Business Growth</h3>
             <p>
               Our designers stay ahead of the curve to provide engaging and
