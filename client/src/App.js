@@ -11,9 +11,9 @@ import AppDev from './pages/AppDev'
 import SeoServices from './pages/SeoServices'
 import DigitalMarketing from './pages/DigitalMarketing'
 import ContactUs from './pages/ContactUs'
+import CartScreen from './pages/CartScreen'
 // import Home from "./pages/Home";
 // import Services from "./pages/Services";
-
 
 const App = () => {
   return (
@@ -28,9 +28,9 @@ const App = () => {
       {/* <Route path='/services' component={Services} /> */}
       <Route path='/login' component={Login} />
       <Route path='/register' component={Register} />
+      <Route path='/cart' component={CartScreen} />
     </Router>
   )
-  
 }
 
 export default App
