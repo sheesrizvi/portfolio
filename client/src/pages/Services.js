@@ -1,11 +1,23 @@
-import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+import {React, useState, useEffect} from 'react'
+import axios from 'axios'
+import Product from '../components/Product'
+
 import Header from '../components/Header'
 import services_img1 from '../img/service/services_img1.png'
 import services_img2 from '../img/service/services_img2.png'
 import services_img3 from '../img/service/services_img3.png'
 
 const Services = () => {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const {data} = await axios.get('/api/products')
+      setProducts(data)
+    }
+    fetchProducts()
+  })
+  
   return (
     <main>
       <div className='service-page'>
@@ -67,47 +79,9 @@ const Services = () => {
         <p>PRICING PLANS</p>
         <h2>The Best Solutions for Our Clients</h2>
         <div className='wrapper'>
-          <Card className='price-card' style={{ width: '18rem' }}>
-            <Card.Header>
-              <div className='price'>
-                <p>$89</p>
-              </div>
-            </Card.Header>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant='primary'>Add to cart</Button>
-            </Card.Body>
-          </Card>
-          <Card className='price-card' style={{ width: '18rem' }}>
-            <Card.Header>
-              <div className='price'>$89</div>
-            </Card.Header>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant='primary'>Add to cart</Button>
-            </Card.Body>
-          </Card>
-          <Card className='price-card' style={{ width: '18rem' }}>
-            <Card.Header>
-              <div className='price'>$89</div>
-            </Card.Header>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant='primary'>Add to cart</Button>
-            </Card.Body>
-          </Card>
+          {products.map((product) => (
+            <Product product={product} />
+          ))}
         </div>
       </div>
       <div className='service-section3'>
