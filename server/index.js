@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 
 const connectDB = require('./db.js')
 const userRoutes = require('./routes/userRoutes')
-// const orderRoutes = require('./routes/orderRoutes')
+const orderRoutes = require('./routes/orderRoutes')
 const productRoutes = require('./routes/productRoutes')
 const { notFound, errorHandler } = require("./middlewares/errorMiddlewares.js")
 
@@ -19,7 +19,7 @@ app.use(express.json());
 // app.use(cors());
 
 app.use('/api/users', userRoutes)
-// app.use("/api/orders", orderRoutes)
+app.use("/api/orders", orderRoutes)
 app.use("/api/products", productRoutes)
 
 
