@@ -37,10 +37,10 @@ const Header = () => {
             <div class='dropdown'>
               <button className='dropbtn'>Services</button>
               <div className='dropdown-content'>
-                <a href='/web-development'>Web Development</a>
-                <a href='/mobile-app-development'>Mobile APP Development</a>
-                <a href='/seo-services'>SEO Services</a>
-                <a href='/digital-marketing'>Digital Marketing</a>
+                <NavLink to='/web-development'>Web Development</NavLink>
+                <NavLink to='/mobile-app-development'>Mobile APP Development</NavLink>
+                <NavLink to='/seo-services'>SEO Services</NavLink>
+                <NavLink to='/digital-marketing'>Digital Marketing</NavLink>
               </div>
             </div>
           </li>
