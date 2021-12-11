@@ -4,8 +4,9 @@ const dotenv = require('dotenv')
 
 const connectDB = require('./db.js')
 const userRoutes = require('./routes/userRoutes')
-const { notFound, errorHandler } = require('./middlewares/errorMiddlewares.js')
 const productRoutes = require('./routes/productRoutes')
+const orderRoutes = require('./routes/orderRoutes')
+const { notFound, errorHandler } = require('./middlewares/errorMiddlewares.js')
 
 dotenv.config()
 
@@ -18,6 +19,7 @@ app.use(express.json())
 
 app.use('/api/users', userRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/orders', orderRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))

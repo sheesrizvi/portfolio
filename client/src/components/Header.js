@@ -1,25 +1,23 @@
 import React, { useState } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from 'react-router-dom'
+import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
+import { logout } from '../Actions/userActions'
 
 import Logo from '../img/Logo.png'
 
 const Header = () => {
-  // const Navbar = () => {
-  //   const [colorChange, setColorchange] = useState(false)
-  //   const changeNavbarColor = () => {
-  //     if (window.scrollY >= 80) {
-  //       setColorchange(true)
-  //     } else {
-  //       setColorchange(false)
-  //     }
-  //   }
-  // }
-  // window.addEventListener('scroll', changeNavbarColor)
+  const dispatch = useDispatch()
+
+  const userLogin = useSelector((state) => state.userLogin)
+  const { userInfo } = userLogin
+
+  const logoutHandler = () => {
+    dispatch(logout())
+    // console.log('logout')
+  }
+
   return (
     <nav>
       <div className='logo'>
@@ -37,10 +35,12 @@ const Header = () => {
             <div class='dropdown'>
               <button className='dropbtn'>Services</button>
               <div className='dropdown-content'>
-                <a href='/web-development'>Web Development</a>
-                <a href='/mobile-app-development'>Mobile APP Development</a>
-                <a href='/seo-services'>SEO Services</a>
-                <a href='/digital-marketing'>Digital Marketing</a>
+                <NavLink to='/web-development'>Web Development</NavLink>
+                <NavLink to='/mobile-app-development'>
+                  Mobile APP Development
+                </NavLink>
+                <NavLink to='/seo-services'>SEO Services</NavLink>
+                <NavLink to='/digital-marketing'>Digital Marketing</NavLink>
               </div>
             </div>
           </li>
@@ -48,23 +48,39 @@ const Header = () => {
             <NavLink to='/contact-us'>Contacts</NavLink>
           </li>
         </ul>
-        {/* <Switch>
-            <Route path='/about'>
-              <About />
-            </Route>
-            <Route path="/services">
-              <Services />
-            </Route>
-            <Route path='/'><Home /></Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-            +
-          </Switch> */}
       </div>
       <div className='cart'>
         {' '}
         <NavLink to='/cart'>🛒</NavLink>
+        {userInfo ? (
+          <div class='dropdown'>
+            <button className='dropbtn' title={userInfo.name} id='username'>
+              {userInfo.name}
+            </button>
+            <div className='dropdown-content'>
+              {/* <NavLink to='/profile'>Profile</NavLink> */}
+              <a onClick={logoutHandler}>Logout</a>
+              {/* <NavLink ></NavLink> */}
+            </div>
+          </div>
+        ) : (
+          // <NavDropdown title={userInfo.name} id='username'>
+          //   <NavLink to='/profile'>Profile</NavLink>
+          //   <NavLink onClick={logoutHandler}>Logout</NavLink>
+          //   {/* <LinkContainer to='/profile'>
+          //     <NavDropdown.Item>Profile</NavDropdown.Item>
+          //   </LinkContainer>
+          //   <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item> */}
+          // </NavDropdown>
+          <NavLink to='/login'>
+            <i className='fas fa-user'></i> Sign In
+          </NavLink>
+          // <LinkContainer to='/login'>
+          //   <Nav.Link>
+          //     <i className='fas fa-user'></i> Sign In
+          //   </Nav.Link>
+          // </LinkContainer>
+        )}
       </div>
     </nav>
   )

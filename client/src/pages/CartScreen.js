@@ -7,6 +7,7 @@ import { addToCart, removeFromCart } from '../Actions/cartActions'
 
 const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id
+  console.log(productId)
 
   // const qty = location.search ? Number(location.search.split('=')[1]) : 1
 
@@ -73,7 +74,7 @@ const CartScreen = ({ match, location, history }) => {
                       variant='light'
                       onClick={() => removeFromCartHandler(item.product)}
                     >
-                      <i className='fas fa-trash'></i>
+                      🛺 <i className='fas fa-trash' />
                     </Button>
                   </Col>
                 </Row>

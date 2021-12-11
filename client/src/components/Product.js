@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom'
 
 const Product = (props) => {
   const addToCartHandler = () => {
-    console.log(props.product._id)
+    // console.log(props.product._id)
     props.history.push(`/cart/${props.product._id}`)
   }
   return (
