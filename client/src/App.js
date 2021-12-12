@@ -13,6 +13,11 @@ import DigitalMarketing from './pages/DigitalMarketing'
 import ContactUs from './pages/ContactUs'
 import CartScreen from './pages/CartScreen'
 import RegisterScreen from './pages/RegisterScreen'
+import ShippingScreen from './pages/ShippingScreen'
+import PaymentScreen from './pages/PaymentScreen'
+import PlaceOrderScreen from './pages/PlaceOrderScreen'
+import OrderScreen from './pages/OrderScreen'
+import ProfileScreen from './pages/ProfileScreen'
 
 const App = () => {
   return (
@@ -24,10 +29,14 @@ const App = () => {
       <Route path='/seo-services' component={SeoServices} />
       <Route path='/digital-marketing' component={DigitalMarketing} />
       <Route path='/contact-us' component={ContactUs} />
-      {/* <Route path='/register' component={Register} /> */}
+      <Route path='/shipping' component={ShippingScreen} />
       <Route path='/cart/:id' component={CartScreen} />
       <Route path='/login' component={LoginScreen} />
       <Route path='/register' component={RegisterScreen} />
+      <Route path='/payment' component={PaymentScreen} />
+      <Route path='/placeorder' component={PlaceOrderScreen} />
+      <Route path='/order/:id' component={OrderScreen} />
+      <Route path='/profile' component={ProfileScreen} />
     </Router>
   )
 }
