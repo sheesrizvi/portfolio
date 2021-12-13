@@ -982,3 +982,131 @@ header {
 .c2-info h5 {
   font-weight: 900;
 }
+
+/* about-us section3  */
+
+.about-us-section-3 {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.about-us-s3-heading {
+  text-align: center;
+}
+
+.about-us-s3-heading h2 {
+  font-weight: 900;
+}
+
+.about-us-s3-cards-wrapper {
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.year-c {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.year {
+  letter-spacing: 0.2rem;
+  /* background: #000; */
+  /* margin-left: 8rem; */
+  width: 15rem;
+  height: 5.5rem;
+  text-align: right;
+  margin: 0 1rem;
+  padding-top: 2rem;
+}
+
+.circle-wrapper {
+  height: 12px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.y-content {
+  width: 15rem;
+  height: 5.5rem;
+  background: rgb(246, 248, 248);
+  padding: 10px 10px;
+  border-radius: 14px;
+  /* border-left: 2px solid #42cd83; */
+  /* margin-top: 2rem; */
+  margin: 0 1rem;
+}
+
+.y1 {
+  border-left: 2px solid #42cd83;
+}
+
+.y2 {
+  border-right: 2px solid #f29111;
+}
+
+.y3 {
+  border-left: 2px solid #7164ea;
+}
+
+.y4 {
+  border-right: 2px solid #f90bad;
+}
+
+.y5 {
+  border-left: 2px solid #0cf;
+}
+
+.c11 {
+  background-color: #42cd83;
+}
+
+.c22 {
+  background-color: #f29111;
+}
+
+.c33 {
+  background-color: #7164ea;
+}
+
+.c44 {
+  background-color: #f90bad;
+}
+
+.c55 {
+  background-color: #0cf;
+}
+
+.yd1 {
+  color: #42cd83;
+}
+
+.yd2 {
+  color: #f29111;
+  text-align: left;
+}
+
+.yd3 {
+  color: #7164ea;
+}
+
+.yd4 {
+  color: #f90bad;
+  text-align: left;
+}
+
+.yd5 {
+  color: #0cf;
+}
+
+.y-content h5 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.y-content p {
+  font-size: 12px;
+}

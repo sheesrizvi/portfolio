@@ -108,6 +108,58 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className='about-us-section-3'>
+        <div className='about-us-s3-heading'>
+          <p>OUR STORY</p>
+          <h2>The Story of Global Outsource Hub</h2>
+          <p>
+            Our success has us leading the pack amongst our competitors with our
+            ability to anticipate change and innovation.
+          </p>
+        </div>
+        <div className='about-us-s3-cards-wrapper'>
+          <div className='year-c'>
+            <div className='year yd1'>2015</div>
+            <div className='circle-wrapper c11'></div>
+            <div className='y-content y1'>
+              <h5>Project Idea</h5>
+              <p>Maecenas elementum sapien in metus placerat finibus.</p>
+            </div>
+          </div>
+          <div className='year-c'>
+            <div className='y-content y2'>
+              <h5>Business Conception</h5>
+              <p>Maecenas elementum sapien in metus placerat finibus.</p>
+            </div>
+            <div className='circle-wrapper c22'></div>
+            <div className='year yd2'>2016</div>
+          </div>
+          <div className='year-c'>
+            <div className='year yd3'>2017</div>
+            <div className='circle-wrapper c33'></div>
+            <div className='y-content y3'>
+              <h5>Legal Review</h5>
+              <p>Maecenas elementum sapien in metus placerat finibus.</p>
+            </div>
+          </div>
+          <div className='year-c'>
+            <div className='y-content y4'>
+              <h5>Infrastucture Design</h5>
+              <p>Maecenas elementum sapien in metus placerat finibus.</p>
+            </div>
+            <div className='circle-wrapper c44'></div>
+            <div className='year yd4'>2018</div>
+          </div>
+          <div className='year-c'>
+            <div className='year yd5'>2019</div>
+            <div className='circle-wrapper c55'></div>
+            <div className='y-content y5'>
+              <h5>Company Established</h5>
+              <p>Maecenas elementum sapien in metus placerat finibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className='WCU-section'>
         <img src={wcuLogo} alt='' />
