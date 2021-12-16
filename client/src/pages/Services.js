@@ -2,6 +2,7 @@ import { React, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Product from '../components/Product'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import services_img1 from '../img/service/services_img1.png'
 import services_img2 from '../img/service/services_img2.png'
 import services_img3 from '../img/service/services_img3.png'
@@ -73,7 +74,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div>Our Process</div>
+      {/* <div>Our Process</div> */}
       <div className='pricing'>
         <p>PRICING PLANS</p>
         <h2>The Best Solutions for Our Clients</h2>
@@ -88,7 +89,7 @@ const Services = () => {
         </div>
       </div>
       <div className='service-section3'>
-        <div>
+        <div className='ss3-img'>
           <img className='ss3-img' src={services_img3} />
         </div>
         <div className='section3-right'>
@@ -102,6 +103,7 @@ const Services = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
@@ -29,6 +30,12 @@ const LoginScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
+      <>
+        Go Back To
+        <button className='btn2'>
+          <NavLink to='/'>Home</NavLink>
+        </button>
+      </>
       <h1>Sign In</h1>
       {error && <h5>{error}</h5>}
       {/* {loading && <Loader />} */}

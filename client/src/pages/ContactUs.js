@@ -35,7 +35,7 @@ const ContactUs = () => {
           </p>
         </div>
         <div className='contact-us-s1-img'>
-          <img src={img1} />
+          <img className='contact-us-s1-img' src={img1} />
         </div>
       </div>
       <div className='service-section3 contact-us-query'>

@@ -12,7 +12,11 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-info'>
         <div className='logo'>
-          <img src={Logo} alt='Logo' style={{ width: '10vw' }} />
+          <img
+            src={Logo}
+            alt='Logo'
+            //  style={{ width: '10vw' }}
+          />
         </div>
         <div className='footer-mail'>
           <h3>📧info@globaloutsourcehub.com</h3>

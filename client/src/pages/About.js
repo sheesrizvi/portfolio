@@ -60,14 +60,9 @@ const About = () => {
       <div className='WVD-section'>
         <img src={wvdLogo} alt='' />
         <div className='WVD-info'>
-          <div className='WVD-info'>
+          <div className='WVD-infoi'>
             <div style={{ width: 100, height: 100 }}>
-              <CircularProgressbar
-                value={76}
-                // minValue={0}
-                // maxValue={0}
-                text={`${76}%`}
-              />
+              <CircularProgressbar value={76} text={`${76}%`} />
             </div>
             {/* <CircularProgressbar value={percentage} text={`${percentage}%`} />; */}
             <h3>Creative Approach</h3>
@@ -76,7 +71,7 @@ const About = () => {
               win your business challenges & help you reach your full potential!
             </p>
           </div>
-          <div className='WVD-info'>
+          <div className='WVD-infoi'>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar
                 value={89}
@@ -91,7 +86,7 @@ const About = () => {
               counterparts of their industry.
             </p>
           </div>
-          <div className='WVD-info'>
+          <div className='WVD-infoi'>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar
                 value={75}
@@ -162,7 +157,7 @@ const About = () => {
       </div>
 
       <div className='WCU-section'>
-        <img src={wcuLogo} alt='' />
+        <img className='wcu-img' src={wcuLogo} alt='' />
 
         <div className='WCU-info'>
           <div className='WCU-header'>

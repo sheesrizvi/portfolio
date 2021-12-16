@@ -12,10 +12,11 @@ import compLogo from '../img/img_box_02-1.png'
 import marketLogo from '../img/img_box_03-1.png'
 import services_img3 from '../img/service/services_img3.png'
 import Footer from '../components/Footer'
+import ahimg from '../img/Appdev/app1.png'
 
 const AppDev = () => {
   return (
-    <main>
+    <main className='adevw'>
       <div className='app-service-page'>
         <Header />
         <div className='app-heading'>
@@ -30,13 +31,16 @@ const AppDev = () => {
               Android platforms.
             </p>
           </div>
+          <div className='ah-img'>
+            <img src={ahimg} className='ahimg' alt='' />
+          </div>
         </div>
       </div>
       <h2 className='app-service-head'>
         <p>CARE FEATURES</p>
         <h2>Provide Awesome Service With Our Tools</h2>
       </h2>
-      <div className='app-cards-section'>
+      <div className='app-cards-section ap3'>
         <div className='app-card card1'>
           <img className='abt-img' src={seoLogo} alt='' />
           <h4>Android App Development</h4>
@@ -64,7 +68,7 @@ const AppDev = () => {
       </div>
       <div className='app-service-section1'>
         <div>
-          <img src={app2} />
+          <img className='as1-img' src={app2} />
         </div>
         <div className='app-section1-right'>
           <p>ABOUT US</p>
@@ -120,11 +124,12 @@ const AppDev = () => {
           </div>
           <button className='btn1'>DISCOVER MORE</button>
         </div>
-        <img src={app3} alt='' />
+
+        <img className='wcus-img' src={app3} alt='' />
       </div>
       <div className='app-service-section1'>
-        <div className='as3-img'>
-          <img src={app4} />
+        <div>
+          <img className='as3-img' src={app4} />
         </div>
         <div className='app-section1-right'>
           <p>CREATIVITY</p>
@@ -136,11 +141,7 @@ const AppDev = () => {
             team of experts, who have years of experience in global app solution
             services and product engineering industries.
           </p>
-          {/* <p>
-            Android growth is continually skyrocketing, quickly catching the
-            explosive growth of the iPhone’s iOS, but many companies are slow to
-            the punch when it comes to building quality Android apps.
-          </p> */}
+
           <div className='app2-info WCU-infoi'>
             {/* <h3>First Working Process</h3> */}{' '}
             <img className='check-img' src={chek2} alt='' />
