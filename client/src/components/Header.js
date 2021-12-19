@@ -21,6 +21,7 @@ const Header = () => {
   // }
   // window.addEventListener('scroll', changeNavbarColor)
   return (
+    
     <nav>
       <div className='logo'>
         <img src={Logo} alt='Logo' style={{ width: '10vw' }} />
