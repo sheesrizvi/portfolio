@@ -28,14 +28,14 @@ const ContactUs = () => {
         <div className='contact-us-s1-heading'>
           <h6>BUSINESS</h6>
           <h3>Find the Perfect Solution for Your Business</h3>
-          <p>
+          <p className='txt-responsive'>
             Global Outsource is a full-service Internet marketing and SEO
             company offering innovative web marketing solutions to mid to large
             size companies across the globe.
           </p>
         </div>
         <div className='contact-us-s1-img'>
-          <img className='contact-us-s1-img' src={img1} />
+          <img className="img-responsive" src={img1} />
         </div>
       </div>
       <div className='service-section3 contact-us-query'>
@@ -86,7 +86,7 @@ const ContactUs = () => {
       </div>
       <div className='news-letter'>
         <img src={f4} alt='' />
-        <h2>Sing up for Newsletter</h2>
+        <h2>Sign up for Newsletter</h2>
         <p>and receive 40% discount on first project</p>
       </div>
       <Footer />
