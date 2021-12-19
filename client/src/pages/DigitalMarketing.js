@@ -122,7 +122,7 @@ const DigitalMarketing = () => {
           <button className='btn2'>CHECK NOW</button>
         </div>
         <div>
-          <img src={s3} />
+          <img src={s3} className='dm-s3-img' />
         </div>
       </div>
       <Footer />

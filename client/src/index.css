@@ -1378,6 +1378,11 @@ header {
     justify-content: space-between;
     margin: 0 auto;
   }
+
+  .seo-s3-img,
+  .dm-s3-img {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 490px) {
