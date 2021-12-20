@@ -26,6 +26,7 @@ import comp7 from "../img/Home/company/Market-Research-Statistics-Logo-300x134.p
 import comp8 from "../img/Home/company/oakwood-300x114.png";
 import comp9 from "../img/Home/company/sunshine.png";
 import comp10 from "../img/Home/company/tsunami-300x50.png";
+import { NavLink } from "react-router-dom";
 const Home = () => {
   
    const scsize = {
@@ -67,7 +68,7 @@ const Home = () => {
             company offering innovative web marketing solutions to mid to large
             size companies across the globe
           </p>
-          <button className="btn1 contact-btn">CONTACT TODAY</button>
+          <button className="btn1 contact-btn"><NavLink to='/contact-us'>CONTACT TODAY</NavLink></button>
         </div>
 
         <div className="service-section">
@@ -127,7 +128,7 @@ const Home = () => {
                 successful Internet marketing campaigns for businesses ranging
                 from local coffee shops to publicly traded companies.
               </p>
-              <button className="btn1">Discover More</button>
+              <button className="btn1"><NavLink to='/about'>Discover More</NavLink></button>
             </div>
             <div className="number-section">
               <div className="contribution-section">
@@ -170,7 +171,7 @@ const Home = () => {
               <p>
                 Global Outsourse Hub gives you the best solution for business
               </p>
-              <button className="btn1">GET IN TOUCH➡</button>
+              <button className="btn1"><NavLink to='/contact-us'>GET IN TOUCH➡</NavLink></button>
             </div>
             <div className="tech-depth">
               <h5>EXPERIENCE</h5>
@@ -220,7 +221,7 @@ const Home = () => {
                   95%
                 </div>
               </div>
-              <button className="btn1">Discover More</button>
+              <button className="btn1"><NavLink to='/about'>Discover More</NavLink></button>
             </div>
           </div>
           <div className="outsourcing-section">
@@ -234,7 +235,7 @@ const Home = () => {
                 Outsourcing basically means asking a third-party vendor to work
                 for you on a contractual basis.
               </p>
-              <button className="btn1">Discover More</button>
+              <button className="btn1"><NavLink to='/about'>Discover More</NavLink></button>
             </div>
             <div className="get-in-touch touch">
               <p>💡</p>
@@ -243,7 +244,7 @@ const Home = () => {
                 Have a project in mind? Let’s get to work. Find out how it works
                 and ask any questions you may have.
               </p>
-              <button className="btn1">GET IN TOUCH➡</button>
+              <button className="btn1"><NavLink to='/contact-us'>GET IN TOUCH➡</NavLink></button>
             </div>
           </div>
           <div className="homeSection-5">
