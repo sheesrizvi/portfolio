@@ -1,36 +1,64 @@
-import {React, useState, useEffect} from 'react'
-import axios from 'axios'
-import Product from '../components/Product'
-
-import Header from '../components/Header'
-import services_img1 from '../img/service/services_img1.png'
-import services_img2 from '../img/service/services_img2.png'
-import services_img3 from '../img/service/services_img3.png'
+import { React, useState, useEffect } from "react";
+import axios from "axios";
+import Product from "../components/Product";
+import Header from "../components/Header";
+import services_img1 from "../img/service/services_img1.png";
+import services_img2 from "../img/service/services_img2.png";
+import services_img3 from "../img/service/services_img3.png";
+import BootstrapSwitchButton from "bootstrap-switch-button-react";
 
 const Services = () => {
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
+  const [result, setResult] = useState([]);
+  const [show, setShow] = useState(true)
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const {data} = await axios.get('/api/products')
-      setProducts(data)
-    }
-    fetchProducts()
-  })
+      const { data } = await axios.get("/api/products");
+      setProducts(data);
+      //
+    
+    };
+    fetchProducts();
+  });
   
+ 
+  
+
+
+  const switchHandler = (checked) => {
+    if (checked) {
+      const result1 = products.filter(
+        (product) => product.billing === "yearly"
+      );
+      setResult(result1);
+      setShow(false)
+    } else {
+      const result1 = products.filter(
+        (product) => product.billing === "monthly"
+      );
+      setResult(result1);
+      setShow(false)
+    }
+  };
+  const initial = products.filter(
+    (product) => product.billing === "monthly"
+  );
+  
+
   return (
     <main>
-      <div className='service-page'>
+      <div className="service-page">
         <Header />
-        <div className='s-heading'>
+        <div className="s-heading">
           <h1>Web Development</h1>
         </div>
       </div>
-      <div className='service-section1'>
+      <div className="service-section1">
         <div>
           <img src={services_img1} />
         </div>
-        <div className='section1-right'>
+        <div className="section1-right">
           <p>Best for You</p>
           <h2>Boosts Your Website Traffic!</h2>
           <p>
@@ -49,8 +77,8 @@ const Services = () => {
       <br />
       <br />
       <br />
-      <div className='service-section1'>
-        <div className='section1-right'>
+      <div className="service-section1">
+        <div className="section1-right">
           <p>Why choose us</p>
           <h2>Outstanding Digital Experience</h2>
 
@@ -75,32 +103,40 @@ const Services = () => {
       </div>
 
       <div>Our Process</div>
-      <div className='pricing'>
+      <div className="pricing">
         <p>PRICING PLANS</p>
         <h2>The Best Solutions for Our Clients</h2>
-        <div className='wrapper'>
-          {products.map((product) => (
+        <BootstrapSwitchButton
+          onlabel="Yearly"
+          offlabel="Monthly"
+          width={100}
+          onChange={switchHandler}
+        />
+        <div className="wrapper">
+          {show ? initial.map((product) => (
+            <Product product={product} />
+          )) :  result.map((product) => (
             <Product product={product} />
           ))}
         </div>
       </div>
-      <div className='service-section3'>
+      <div className="service-section3">
         <div>
-          <img className='ss3-img' src={services_img3} />
+          <img className="ss3-img" src={services_img3} />
         </div>
-        <div className='section3-right'>
+        <div className="section3-right">
           <p>Analysis</p>
           <h2>Get Free Analysis?</h2>
-          <form className='analysis-form'>
-            <input type='text' name='name' placeholder='Your Name*' />
-            <input type='email' name='email' placeholder='Your email*' />
-            <input type='text' name='phone' placeholder='Phone' />
-            <input type='text' name='website' placeholder='Website*' />
+          <form className="analysis-form">
+            <input type="text" name="name" placeholder="Your Name*" />
+            <input type="email" name="email" placeholder="Your email*" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <input type="text" name="website" placeholder="Website*" />
           </form>
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
