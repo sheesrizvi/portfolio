@@ -9,17 +9,19 @@ const Product = (props) => {
   }
   return (
     <Card className='price-card' style={{ width: '18rem' }}>
-      <Card.Header className='pcard-header'>
-        <div className='price'>
+      <Card.Header className='pcard-header '>
+        <div className='price '>
           <p>${props.product.price}</p>
         </div>
+        <div class='gap'></div>
+        {/* <div class='image'></div> */}
       </Card.Header>
       <Card.Body>
         <Card.Title className='product-title'>{props.product.name}</Card.Title>
         <Card.Text className='product-text'>
           {props.product.description}
         </Card.Text>
-        <Button onClick={addToCartHandler} variant='primary' className='btn1'>
+        <Button onClick={addToCartHandler} variant='primary' className='btnx'>
           Add to cart
         </Button>
       </Card.Body>

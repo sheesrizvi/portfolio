@@ -223,14 +223,31 @@ a:-webkit-any-link {
 }
 
 .price {
-  background: #c5c0f0;
-  height: 15rem;
-  border: 2px solid red;
+  background: yellow;
+  height: 10rem;
+  width: 10rem;
+  border: 5px solid black;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  /* width:100px; */
+  /* margin-top: 3rem; */
+}
+
+.price:hover {
+  background: #0cf;
+  height: 12rem;
+  width: 12rem;
+  transition: 1s;
+}
+
+.btnx {
+  margin-top: 1rem;
 }
 
 .pricing {
@@ -252,13 +269,13 @@ a:-webkit-any-link {
 }
 
 .price-card {
-  margin: 2rem;
+  margin: 1rem;
   border: none;
 }
 
-.price-card:hover {
+/* .price-card:hover {
   background: #42cd83;
-}
+} */
 
 .pcard-header {
   border: none;
