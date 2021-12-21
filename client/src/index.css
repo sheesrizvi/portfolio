@@ -32,8 +32,10 @@ code {
 }
 
 .btn1:hover {
+  transition: 1ms;
   background: #6254e7;
   color: #fff;
+  transition: 0.5s;
 }
 
 .btn2 {
@@ -129,8 +131,9 @@ a:-webkit-any-link {
 }
 
 .c1:hover {
-  background: purple;
+  background: #4054b2;
   color: #fff;
+  transition: 0.6s;
   /* height: 280px;
   width: 330px; */
 }
@@ -153,6 +156,7 @@ a:-webkit-any-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .abt-img {
@@ -219,7 +223,7 @@ a:-webkit-any-link {
 }
 
 .price {
-  background: chartreuse;
+  background: #c5c0f0;
   height: 15rem;
   border: 2px solid red;
   border-radius: 50%;
@@ -231,10 +235,34 @@ a:-webkit-any-link {
 
 .pricing {
   text-align: center;
+  margin-bottom: 25rem;
+  margin-top: 2rem;
+}
+.pricing h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.product-title {
+  font-weight: 900;
+}
+
+.product-text {
+  color: #696687;
 }
 
 .price-card {
   margin: 2rem;
+  border: none;
+}
+
+.price-card:hover {
+  background: #42cd83;
+}
+
+.pcard-header {
+  border: none;
+  background: none;
 }
 
 .service-section3 {
@@ -558,6 +586,11 @@ header {
   font-weight: bold;
   line-height: 1.5;
   padding: 0px 0px;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 3rem;
 }
 
 .section3-right {
@@ -1372,10 +1405,12 @@ header {
   }
 
   .footer-mail {
-    width: 40vw;
+    margin-left: 39px;
+    /* margin-bottom: 4rem; */
   }
   .footer-mail h3 {
     font-size: 1.3rem;
+    /* width: 10px; */
   }
 
   .footer-services {
@@ -1385,6 +1420,8 @@ header {
 
   .f-about {
     margin-bottom: 3rem;
+    width: 70vw;
+    margin-left: 48px;
   }
 
   .copyright {
@@ -1504,6 +1541,16 @@ header {
     font-size: 1rem;
     width: 90vw;
   }
+
+  .f-services ul {
+    display: block;
+    margin-left: 18px;
+  }
+
+  .f-services li {
+    margin: 10px 0;
+  }
+
   .line {
     border: 0.5px ridge grey;
     height: 0px;

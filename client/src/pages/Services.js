@@ -1,22 +1,41 @@
-import { React, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { React, useState, useEffect } from 'react'
+import axios from 'axios'
 import Product from '../components/Product'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import services_img1 from '../img/service/services_img1.png'
 import services_img2 from '../img/service/services_img2.png'
 import services_img3 from '../img/service/services_img3.png'
-import { listProducts } from '../Actions/productActions'
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
+import Footer from '../components/Footer'
 
 const Services = () => {
-  const dispatch = useDispatch()
+  const [products, setProducts] = useState([])
+  const [result, setResult] = useState([])
+  const [show, setShow] = useState(true)
 
   useEffect(() => {
-    dispatch(listProducts())
-  }, [dispatch])
+    const fetchProducts = async () => {
+      const { data } = await axios.get('/api/products')
+      setProducts(data)
+      //
+    }
+    fetchProducts()
+  })
 
-  const productList = useSelector((state) => state.productList)
-  const { loading, error, products } = productList
+  const switchHandler = (checked) => {
+    if (checked) {
+      const result1 = products.filter((product) => product.billing === 'yearly')
+      setResult(result1)
+      setShow(false)
+    } else {
+      const result1 = products.filter(
+        (product) => product.billing === 'monthly'
+      )
+      setResult(result1)
+      setShow(false)
+    }
+  }
+  const initial = products.filter((product) => product.billing === 'monthly')
 
   return (
     <main>
@@ -74,22 +93,23 @@ const Services = () => {
         </div>
       </div>
 
-      {/* <div>Our Process</div> */}
       <div className='pricing'>
         <p>PRICING PLANS</p>
         <h2>The Best Solutions for Our Clients</h2>
+        <BootstrapSwitchButton
+          onlabel='Yearly'
+          offlabel='Monthly'
+          width={100}
+          onChange={switchHandler}
+        />
         <div className='wrapper'>
-          {loading ? (
-            <h2>Loading...</h2>
-          ) : error ? (
-            <h3>{error}</h3>
-          ) : (
-            products.map((product) => <Product product={product} />)
-          )}
+          {show
+            ? initial.map((product) => <Product product={product} />)
+            : result.map((product) => <Product product={product} />)}
         </div>
       </div>
       <div className='service-section3'>
-        <div className='ss3-img'>
+        <div>
           <img className='ss3-img' src={services_img3} />
         </div>
         <div className='section3-right'>
