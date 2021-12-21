@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Card, Button } from 'react-bootstrap'
 import Header from '../components/Header'
 import app2 from '../img/Appdev/app2.jpg'
@@ -13,9 +13,60 @@ import marketLogo from '../img/img_box_03-1.png'
 import services_img3 from '../img/service/services_img3.png'
 import Footer from '../components/Footer'
 import ahimg from '../img/Appdev/app1.png'
+import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.css'
+import comp1 from '../img/Home/company/accite-300x67.jpg'
+import comp2 from '../img/Home/company/british.jpg'
+import comp3 from '../img/Home/company/e2m2-300x65.jpg'
+import comp4 from '../img/Home/company/atm-300x150.png'
+import comp5 from '../img/Home/company/delhifoot.png'
+import comp6 from '../img/Home/company/future-300x182.png'
+import comp7 from '../img/Home/company/Market-Research-Statistics-Logo-300x134.png'
+import comp8 from '../img/Home/company/oakwood-300x114.png'
+import comp9 from '../img/Home/company/sunshine.png'
+import comp10 from '../img/Home/company/tsunami-300x50.png'
 
 const AppDev = () => {
+
+  const scsize = {
+    0: {
+      items: 1,
+    },
+    450: {
+      items: 2,
+    },
+    1000: {
+      items: 4,
+    },
+  }
+  const [status, setStatus] = useState('Submit')
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('Sending...')
+    const { name, email, message, phone, website } = e.target.elements
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+      phone: phone.value,
+      website: website.value,
+    }
+    console.log(details)
+    let response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(details),
+    })
+    setStatus('Submit')
+    let result = await response.json()
+    alert(result.status)
+  }
+
   return (
+    
     <main className='adevw'>
       <div className='app-service-page'>
         <Header />
@@ -165,6 +216,46 @@ const AppDev = () => {
           <button className='btn1'>DISCOVER MORE</button>
         </div>
       </div>
+      <div className='homeSection-5 home5top'>
+              <OwlCarousel
+                className='owl-theme'
+                responsive={scsize}
+                autoplay
+                loop
+                margin={50}
+              >
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp1} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp2} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp3} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp4} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp5} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp6} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp7} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp8} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp9} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp10} />
+                </div>
+              </OwlCarousel>
+            </div>
       <div className='service-section3'>
         <div>
           <img src={services_img3} />
@@ -172,11 +263,37 @@ const AppDev = () => {
         <div className='section3-right'>
           <p>Analysis</p>
           <h2>Get Free Analysis?</h2>
-          <form className='analysis-form'>
-            <input type='text' name='name' placeholder='Your Name*' />
-            <input type='email' name='email' placeholder='Your email*' />
-            <input type='text' name='phone' placeholder='Phone' />
-            <input type='text' name='website' placeholder='Website*' />
+          <form onSubmit={handleSubmit}>
+            <div className='analysis-form'>
+              <input
+                type='text'
+                name='name'
+                id='name'
+                placeholder='Your Name*'
+              />
+              <input
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Your email*'
+              />
+              <input type='text' name='phone' id='phone' placeholder='Phone' />
+              <input
+                type='text'
+                name='website'
+                id='website'
+                placeholder='Website*'
+              />
+              <input
+                type='text'
+                name='message'
+                id='message'
+                placeholder='Message'
+              />
+            </div>
+            <button className='btn1' type='submit'>
+              SEND MESSAGE
+            </button>
           </form>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import s1 from '../img/DigitalMarketing/s1-img.png'
@@ -10,6 +10,30 @@ import s2c2 from '../img/DigitalMarketing/s2-2.png'
 import { NavLink } from 'react-router-dom'
 
 const DigitalMarketing = () => {
+  const [status, setStatus] = useState('Submit')
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('Sending...')
+    const { name, email, message, phone, website } = e.target.elements
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+      phone: phone.value,
+      website: website.value,
+    }
+    console.log(details)
+    let response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(details),
+    })
+    setStatus('Submit')
+    let result = await response.json()
+    alert(result.status)
+  }
   return (
     <main>
       {' '}
@@ -113,13 +137,39 @@ const DigitalMarketing = () => {
           <img src={mail_img} className='mail-img' />
           <p>CONTACT US</p>
           <h2>Drop Us a Line</h2>
-          <form className='analysis-form'>
-            <input type='text' name='name' placeholder='Your Name*' />
-            <input type='email' name='email' placeholder='Your email*' />
-            <input type='text' name='phone' placeholder='Phone' />
-            <input type='text' name='website' placeholder='Website*' />
+          <form onSubmit={handleSubmit}>
+            <div className='analysis-form'>
+              <input
+                type='text'
+                name='name'
+                id='name'
+                placeholder='Your Name*'
+              />
+              <input
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Your email*'
+              />
+              <input type='text' name='phone' id='phone' placeholder='Phone' />
+              <input
+                type='text'
+                name='website'
+                id='website'
+                placeholder='Website*'
+              />
+              <input
+                type='text'
+                name='message'
+                id='message'
+                placeholder='Message'
+              />
+            </div>
+            <button className='btn2' type='submit'>
+              CHECK NOW
+            </button>
           </form>
-          <button className='btn2'>CHECK NOW</button>
+          
         </div>
         <div>
           <img src={s3} className='dm-s3-img' />

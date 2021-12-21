@@ -555,6 +555,7 @@ header {
   width: 75vw;
   margin: 0 auto;
   margin-top: 10rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
 }
@@ -711,7 +712,7 @@ header {
   height: 30px;
   width: 30px;
 }
-<<<<<<< HEAD =======>>>>>>>izhar .app-WCU-header {
+.app-WCU-header {
   width: 450px;
 }
 
@@ -1204,6 +1205,7 @@ header {
 
   .WCU-section {
     display: block;
+    
   }
 
   .about-us-section img {
@@ -1473,6 +1475,10 @@ header {
   .analysis-form {
     display: flex;
     flex-direction: column;
+    width: 70vw;
+  }
+  .analysis-form input {
+    margin: 0 auto;
   }
   .home-page {
     background-size: contain;
@@ -1593,6 +1599,9 @@ header {
   }
   .home5top {
     margin-top: 10rem;
+  }
+  .dm-s2-img {
+    padding-bottom: 1rem;
   }
 }
 

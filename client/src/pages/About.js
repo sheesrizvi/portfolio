@@ -10,8 +10,35 @@ import wcuLogo from '../img/home_img-03-1.png'
 import seoLogo from '../img/img_box_01-1.png'
 import compLogo from '../img/img_box_02-1.png'
 import marketLogo from '../img/img_box_03-1.png'
+import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.css'
+import test1 from '../img/Home/testimonial/Denis-Robinson-1-258x258.jpg'
+import test2 from '../img/Home/testimonial/img_2-1-258x258.jpg'
+import test3 from '../img/Home/testimonial/Silviia-Garden-1-258x258.jpg'
+import comp1 from '../img/Home/company/accite-300x67.jpg'
+import comp2 from '../img/Home/company/british.jpg'
+import comp3 from '../img/Home/company/e2m2-300x65.jpg'
+import comp4 from '../img/Home/company/atm-300x150.png'
+import comp5 from '../img/Home/company/delhifoot.png'
+import comp6 from '../img/Home/company/future-300x182.png'
+import comp7 from '../img/Home/company/Market-Research-Statistics-Logo-300x134.png'
+import comp8 from '../img/Home/company/oakwood-300x114.png'
+import comp9 from '../img/Home/company/sunshine.png'
+import comp10 from '../img/Home/company/tsunami-300x50.png'
 
 const About = () => {
+  const scsize = {
+    0: {
+      items: 1,
+    },
+    450: {
+      items: 2,
+    },
+    1000: {
+      items: 4,
+    },
+  }
   return (
     <div>
       <Header />
@@ -185,6 +212,114 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className='homeSection-5 home5top'>
+            <div className='service-head w-30'>
+              <h5>Testimonials</h5>
+              <h3 className='mb-4'>What our Client's say</h3>
+              <OwlCarousel
+                className='owl-theme'
+                items={1}
+                autoplay
+                loop
+                margin={10}
+              >
+                <div>
+                  <img
+                    className='img rounded-circle mx-auto'
+                    style={{ width: '120px' }}
+                    src={test1}
+                  />
+                  <div className='my-3 cstmr'>
+                    This company helped me a lot to increase my brand awareness
+                    and promote my products and services. Its team guided me to
+                    improve brand loyalty. I really appreciate with work done by
+                    the team.
+                  </div>
+                  <div className='mt-3'>
+                    Tommy Dents
+                    <p className='cstmr'>Customer</p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    className='img rounded-circle mx-auto'
+                    style={{ width: '120px' }}
+                    src={test2}
+                  />
+                  <div className='my-3 cstmr'>
+                    Time delivery services! Affordable &amp; Discounts offers on
+                    special deals! Great improvement and complete satisfaction.
+                    Supportive and manageable work strategy. I positively
+                    recommend this company for web development services.
+                  </div>
+                  <div className='mt-3'>
+                    Dennis Robinson
+                    <p className='cstmr'>Customer</p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    className='img rounded-circle mx-auto'
+                    style={{ width: '120px' }}
+                    src={test3}
+                  />
+                  <div className='my-3 cstmr'>
+                    Get up to the mark digital marketing Services done by Global
+                    Outsource Hub team who is very professional and experienced
+                    in their work. They understand each and everything very
+                    carefully and provide the best suggestion for the growth of
+                    the business. I really appreciate them. Great Experience
+                  </div>
+                  <div className='mt-3'>
+                    Silvia Garden
+                    <p className='cstmr'>Customer</p>
+                  </div>
+                </div>
+              </OwlCarousel>
+            </div>
+          </div>
+          <div className='company'>
+            <div className='homeSection-5 home5top'>
+              <OwlCarousel
+                className='owl-theme'
+                responsive={scsize}
+                autoplay
+                loop
+                margin={50}
+              >
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp1} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp2} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp3} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp4} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp5} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp6} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp7} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp8} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp9} />
+                </div>
+                <div className='cmpny-item'>
+                  <img className='imgcm' src={comp10} />
+                </div>
+              </OwlCarousel>
+            </div>
+          </div>
       <Footer />
     </div>
   )
